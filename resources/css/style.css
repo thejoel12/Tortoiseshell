@@ -32,10 +32,13 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
 }
+
 
 .greenbar {
   position: relative;
+  width: 100%;
   top: 1rem;
   background-color: cadetblue;
   display: flex;
@@ -58,4 +61,51 @@ h2 {
 .nav span {
   color: white;
   padding-right: 2rem;
+}
+
+.abovewhite {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10rem;
+  margin-top: 10rem;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.whitebar {
+  background-color: white;
+  position: relative;
+
+
+  padding: 1.5rem 5rem;
+}
+
+.middleimages {
+  margin: 3rem 0 3rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.container .middleimages {
+  justify-content: center;
+}
+
+.services {
+  height: 8rem;
+  width: 5rem;
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+}
+
+.services img {
+  width: 3.5rem;
+}
+
+.textcontent {
+  display: flex;
 }
