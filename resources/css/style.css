@@ -61,9 +61,14 @@ h2 {
   color: white;
 }
 
-.nav span {
+.nav span,
+.mobilenav {
   color: white;
   padding-right: 2rem;
+}
+
+.mobilenav {
+  display: none;
 }
 
 .abovewhite {
@@ -110,7 +115,38 @@ h2 {
     padding: 0.75rem 4rem;
   }
 
+} /*end of 1024 css */
+
+@media only screen and (max-width: 720px) {
+  .nav {
+    display: none;
+  }
+
+  .mobilenav {
+    display: block;
+    text-align: center;
+  }
+
+  .header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .abovewhite {
+    margin-top: 9rem;
+    display: block;
+  }
+
+  .whitebar {
+    padding: 1rem
+
+  }
+  h1 {
+    text-align: center;
+    font-size: 1rem;
+  }
 }
+
 
 .middleimages {
   margin: 3rem 0 3rem 0;
@@ -138,6 +174,27 @@ h2 {
   width: 3.5rem;
 }
 
+@media only screen and (max-width: 720px) {
+  .middleimages {
+    margin: 3.77rem 0 3.77rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services span {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+
+  .services img {
+    padding: 1.54rem 0 0 0;
+  }
+
+  .services {
+    justify-content: flex-start;
+  }
+}
+
 .textcontent {
   display:inline-flex;
   justify-content: space-around;
@@ -157,6 +214,39 @@ h2 {
   width: 35%;
 }
 
+
+@media only screen and (max-width: 720px) {
+  .textcontent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    align-items: center;
+
+  }
+
+  .contentbox {
+    width: 100%;
+    padding-right: 0%;
+  }
+
+  .smallgreenbar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contentbox p {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+  }
+
+  .contentbox.appointment {
+    margin-top: 4rem;
+  }
+}
+
+
+
+
 .footer {
   margin-top: 5rem;
   display: flex;
@@ -167,4 +257,20 @@ h2 {
 .footer img {
   height: 1.5rem;
   padding-right: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .footer span {
+    display: none;
+  }
+
+  .footer {
+    justify-content: center;
+    padding: 4rem 0 4rem 0;
+  }
+
+  .footer img {
+    padding-right: 0;
+  }
+
 }
